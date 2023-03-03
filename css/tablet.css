@@ -1,0 +1,105 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 582px;
+  }
+
+  .hero {
+    padding-bottom: 108px;
+
+    background-image: linear-gradient(
+        var(--hero-background-color),
+        var(--hero-background-color)
+      ),
+      url(../images/bg-people-office-tab-min.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          var(--hero-background-color),
+          var(--hero-background-color)
+        ),
+        url(../images/bg-people-office-tab-2x-min.jpg);
+    }
+  }
+
+  .hero-title {
+    max-width: 494px;
+
+    margin-bottom: 40px;
+
+    font-size: 56px;
+
+    line-height: calc(60 / 56);
+  }
+
+  .features-container {
+    max-width: 766px;
+  }
+
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+
+  .features-list > li {
+    width: calc((100% - 24px) / 2);
+  }
+  .team {
+    padding-bottom: 104px;
+  }
+  .team-container {
+    max-width: 582px;
+  }
+
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  .customers-list {
+    column-gap: 24px;
+  }
+
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .footer-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: left;
+
+    column-gap: 24px;
+  }
+
+  .footer-desc-wrap {
+    display: block;
+  }
+
+  .footer-soc {
+    display: block;
+  }
+
+  .footer-subscribe {
+    display: block;
+    width: 453px;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+
+    gap: 24px;
+  }
+
+  .modal {
+    min-width: 408px;
+  }
+}

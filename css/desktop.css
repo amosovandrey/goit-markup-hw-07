@@ -1,0 +1,104 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .section {
+    padding-top: 120;
+    padding-bottom: 120px;
+  }
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+
+    background-image: linear-gradient(
+        var(--hero-background-color),
+        var(--hero-background-color)
+      ),
+      url(../images/bg-people-office-min.jpeg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          var(--hero-background-color),
+          var(--hero-background-color)
+        ),
+        url(../images/bg-people-office-2x-min.jpg);
+    }
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
+  .features-list {
+    gap: 24px;
+  }
+
+  .features-list > li {
+    width: calc((100% - 72px) / 4);
+    margin-bottom: 0;
+  }
+
+  .features-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .list-title {
+    margin-bottom: 8px;
+
+    color: var(--dark-color);
+    font-size: 20px;
+
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .description {
+    display: block;
+    padding-bottom: 83px;
+  }
+
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team-container {
+    max-width: 1158px;
+  }
+
+  .team-list {
+    flex-wrap: nowrap;
+  }
+
+  .customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+  }
+
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
+
+  .footer-info {
+    align-items: baseline;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-wrap: nowrap;
+  }
+
+  .footer-desc-wrap {
+    margin-right: 120px;
+  }
+
+  .footer-soc {
+    margin-right: 80px;
+  }
+}

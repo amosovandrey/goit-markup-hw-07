@@ -202,7 +202,11 @@ body {
   fill: var(--title-white-color);
 }
 
-.mob-menu-list > li {
+.mob-menu-list {
+  margin-bottom: 40px;
+}
+
+.mob-menu-list > li:not(:last-child) {
   margin-bottom: 40px;
 }
 
@@ -250,7 +254,7 @@ body {
   display: flex;
   align-items: center;
 
-  gap: 56px;
+  gap: 42px;
 }
 .mob-menu-soc-item {
   min-width: 40px;
@@ -357,10 +361,9 @@ body {
 }
 
 .features-list {
-}
-
-.features-list > li {
-  margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 72px;
 }
 
 .features-icon {
@@ -439,6 +442,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: calc(24 / 20);
+  margin-bottom: 8px;
 }
 
 .team-list-item {

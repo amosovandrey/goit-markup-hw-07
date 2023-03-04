@@ -7,6 +7,10 @@
     font-size: 36px;
   }
 
+  .mob-menu-soc-list {
+    gap: 56px;
+  }
+
   .modal {
     min-width: 392px;
   }

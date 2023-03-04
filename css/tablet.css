@@ -69,8 +69,6 @@
   }
 
   .header-contacts-item {
-    padding-top: 24px;
-    padding-bottom: 24px;
     color: inherit;
     font-style: normal;
 
@@ -112,6 +110,7 @@
 
   .features-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
   }

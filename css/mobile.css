@@ -3,6 +3,10 @@
     max-width: 426px;
   }
 
+  .mob-menu-contacts-tel {
+    font-size: 36px;
+  }
+
   .modal {
     min-width: 392px;
   }

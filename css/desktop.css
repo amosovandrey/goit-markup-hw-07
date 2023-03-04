@@ -5,6 +5,20 @@
     padding: 0 15px;
   }
 
+  .header-container {
+    max-width: 1158px;
+  }
+
+  .header-logo {
+    margin-right: 76px;
+  }
+
+  .header-contacts {
+    flex-direction: row;
+
+    gap: 40px;
+  }
+
   .section {
     padding-top: 120;
     padding-bottom: 120px;
@@ -100,5 +114,25 @@
 
   .footer-soc {
     margin-right: 80px;
+  }
+
+  .filter-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+
+  .filter-section > .container {
+    max-width: 1158px;
+  }
+
+  .btn-list {
+    margin-bottom: 72px;
+  }
+
+  .filter-list {
+    row-gap: 48px;
+  }
+  .filter-list > li {
+    width: calc((100% - 48px) / 3);
   }
 }

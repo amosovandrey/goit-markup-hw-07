@@ -1,18 +1,4 @@
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 582px;
-  }
-
-  .hero {
-    padding-bottom: 108px;
-
-    background-image: linear-gradient(
-        var(--hero-background-color),
-        var(--hero-background-color)
-      ),
-      url(../images/bg-people-office-tab-min.jpg);
-  }
-
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -23,6 +9,91 @@
         ),
         url(../images/bg-people-office-tab-2x-min.jpg);
     }
+  }
+  .container {
+    max-width: 582px;
+  }
+  .header-container {
+    max-width: 766px;
+  }
+
+  .header-logo {
+    margin-right: 120px;
+  }
+
+  .header-list {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    gap: 40px;
+  }
+
+  .header-list-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: var(--dark-color);
+    font-weight: 500;
+    transition: color var(--time) var(--timing-function);
+  }
+
+  .header-list-link:hover,
+  .header-list-link:focus,
+  .header-list-link.current {
+    color: var(--active-color);
+  }
+  .current {
+    position: relative;
+  }
+  .current::after {
+    display: block;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    height: 4px;
+    border-radius: 2px;
+    background: var(--active-color);
+    content: '';
+  }
+
+  /* ------------- CONTACTS ------------- */
+  .header-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .header-contacts-item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: inherit;
+    font-style: normal;
+
+    transition: color var(--time) var(--timing-function);
+  }
+
+  .header-contacts-item:hover,
+  .header-contacts-item:focus {
+    color: var(--active-color);
+  }
+
+  .menu-open-btn {
+    display: none;
+  }
+
+  .hero {
+    padding-bottom: 108px;
+
+    background-image: linear-gradient(
+        var(--hero-background-color),
+        var(--hero-background-color)
+      ),
+      url(../images/bg-people-office-tab-min.jpg);
   }
 
   .hero-title {
@@ -101,5 +172,39 @@
 
   .modal {
     min-width: 408px;
+  }
+
+  .filter-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .filter-section > .container {
+    max-width: 766px;
+  }
+
+  .btn-list {
+    flex-wrap: nowrap;
+
+    max-width: unset;
+
+    margin-bottom: 64px;
+  }
+
+  .filter-btn {
+    padding: 12px 24px;
+  }
+
+  .filter-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .filter-list > li {
+    width: calc((100% - 24px) / 2);
   }
 }
